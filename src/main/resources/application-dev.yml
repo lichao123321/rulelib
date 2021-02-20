@@ -1,0 +1,19 @@
+#logging:
+#  config: classpath:log4j2-dev.xml
+logging:
+  level:
+    com.glodon.rulelib.mapper: debug
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1/user-center?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+server:
+  port: 8080
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
