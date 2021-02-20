@@ -23,7 +23,7 @@ public class ResultBean<T> implements Serializable {
 
 
     // 处理成功的状态码
-    public static final String SUCCESS_CODE = "1";
+    public static final String SUCCESS_CODE = "200";
     // 发生未知错误的状态码
     public static final String UNSPECIFIED_CODE = "500";
 
